@@ -1,0 +1,12 @@
+.gallery {
+  margin: 2em;
+}
+
+.gallery .card {
+  height: 100%;
+}
+
+.card-header {
+  font-weight: 600;
+  font-size: 20px;
+}

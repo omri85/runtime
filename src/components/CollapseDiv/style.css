@@ -1,0 +1,24 @@
+.collapse-div {
+  border: solid 1px;
+  padding: 1rem;
+  width: 70%;
+}
+
+.collapse-div .title {
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.collapse-div .title svg {
+  margin-right: 0.5rem;
+  top: 1px;
+}
+
+.collapse {
+  text-align: left;
+}
+
+.collapse-items div {
+  margin: 0.5rem;
+}
