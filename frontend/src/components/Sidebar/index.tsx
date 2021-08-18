@@ -1,6 +1,5 @@
-import React from "react";
 import { useHistory } from "react-router-dom";
-import { Navigation } from "react-minimal-side-navigation/lib";
+import { Navigation, NavItemProps } from "react-minimal-side-navigation/lib";
 import "react-minimal-side-navigation/lib/ReactMinimalSideNavigation.css";
 import "./style.css";
 
@@ -8,7 +7,7 @@ export default function Sidebar() {
   const history = useHistory();
   //   const { auth } = props;
 
-  const sidebarItems = [
+  const sidebarItems: NavItemProps[] = [
     {
       title: "Home",
       itemId: "/dashboard",
@@ -26,14 +25,18 @@ export default function Sidebar() {
       itemId: "2",
       subNav: [{ title: "Integrations", itemId: "/settings/connect" }],
     },
-    { title: "Analytics", itemId: "/analytics" },
+    {
+      title: "Analytics",
+      itemId: "6",
+      subNav: [{ title: "One on One", itemId: "/analytics/oneOnOne" }],
+    },
   ];
 
   return (
     <div className='sidebar'>
       <Navigation
         onSelect={({ itemId }) => {
-          if (!Number.isInteger(itemId)) history.push(itemId);
+          if (isNaN(parseInt(itemId))) history.push(itemId);
         }}
         activeItemId='/dashboard'
         items={sidebarItems}
