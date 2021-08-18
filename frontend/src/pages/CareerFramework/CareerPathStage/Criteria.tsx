@@ -8,9 +8,9 @@ type Props = {
 export default function Criteria(props: Props) {
   return (
     <div className='criteria'>
-      <div className='h4'>Criteria: {props.name}</div>
+      <div className='heading4'>Criteria: {props.name}</div>
       <div className='objectives'>
-        <div className='h5'>Objectives</div>
+        <div className='heading5'>Objectives</div>
         <Objective
           name='Delivery'
           description='I deliver some of my team’s goals on time and with a high standard of quality'

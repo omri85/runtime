@@ -3,7 +3,8 @@ import CareerPathSection from "./CareerPathSection";
 export default function CareerPathsView() {
   return (
     <div>
-      <div className='h5'>Career Paths</div>
+      <div className='heading5'>Career Paths</div>
+      <br />
       <CareerPathSection title='Software Engineer'>
         <div className='career-path-level-title'>
           <a href='1/stages/1'>SWE Level 1</a>

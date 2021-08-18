@@ -25,7 +25,7 @@ export default function CollapseDiv(props: Props) {
         ) : (
           <RiArrowDownSLine className='collapse-button' />
         )}
-        <div className='h6'>{title}</div>
+        <div className='heading6'>{title}</div>
       </div>
       <Collapse in={open} className='collapse'>
         <div className='collapse-items'>{children}</div>

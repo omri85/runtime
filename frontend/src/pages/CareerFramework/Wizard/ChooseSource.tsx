@@ -9,7 +9,7 @@ export default function ChooseSource() {
   const history = useHistory();
   return (
     <div>
-      <div className='h3'>Create Career Framework</div>
+      <div className='heading3'>Create Career Framework</div>
       <div className='gallery'>
         <Row xs={1} md={3} className='g-4'>
           <Col>
@@ -41,7 +41,7 @@ export default function ChooseSource() {
           </Col>
         </Row>
       </div>
-      <div className='h4'>Use a template</div>
+      <div className='heading4'>Use a template</div>
       <div className='gallery'>
         <Row xs={1} md={3} className='g-4'>
           <Col>

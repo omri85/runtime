@@ -11,7 +11,7 @@ export default function AnalyticsTable(props: Props) {
   const { columns, data, title } = props;
   return (
     <div className='widget'>
-      <div className='h6 center'>
+      <div className='heading6 center'>
         <strong>{title}</strong>
       </div>
       <Table bordered>

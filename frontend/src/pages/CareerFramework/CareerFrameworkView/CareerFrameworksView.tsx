@@ -8,7 +8,7 @@ export default function CareerFrameworksView() {
 
   return (
     <div>
-      <div className='h3'>Career Frameworks</div>
+      <div className='heading3'>Career Frameworks</div>
       <AdminTable
         data={data}
         columns={[{ name: "Name", id: "name" }]}

@@ -7,12 +7,13 @@ export default function CareerFrameworkView() {
 
   return (
     <div>
-      <div className='h3'>{name}</div>
+      <div className='heading4'>{name}</div>
       {/* <Form className='admin-form'>
         <Col sm={4}>
           <Form.Control type='text' placeholder='Name' />
         </Col>
       </Form> */}
+      <br />
       <CareerPathsView />
     </div>
   );

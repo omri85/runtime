@@ -5,7 +5,8 @@ import AnalyticsTable from "../../../components/Analytics/AnalyticsTable";
 export default function OneOnOneAnalyticsView() {
   return (
     <div>
-      <div className='h3'>One On One</div>
+      <div className='heading4'>One On One</div>
+      <br />
       <Row sm={2} md={4}>
         <Col>
           <PieChart progress={0.5} title='Plan vs Delivery last sprint' />
