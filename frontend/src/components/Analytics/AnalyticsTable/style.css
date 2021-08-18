@@ -1,0 +1,7 @@
+.widget table {
+  text-align: left;
+}
+
+.widget thead tr {
+  line-height: 30px;
+}

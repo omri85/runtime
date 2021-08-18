@@ -1,0 +1,12 @@
+.center {
+  text-align: center;
+}
+.widget {
+  padding: 1rem;
+  border: solid 1px;
+  height: 100%;
+}
+
+.widget .h6 {
+  margin-bottom: 1rem;
+}
