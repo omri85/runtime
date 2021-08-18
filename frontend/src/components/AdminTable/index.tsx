@@ -26,23 +26,17 @@ export default function AdminTable(props: Props) {
   const { data, columns, addUrl, addLabel } = props;
 
   return (
-    <div>
+    <div className='admin-table'>
       <div className='top-buttons'>
-        <Form>
-          <Form.Group as={Row}>
-            <Col md={{ span: 9, offset: 9 }}>
-              <Button
-                className='add-button'
-                onClick={() => {
-                  history.push(addUrl);
-                }}>
-                {addLabel}
-              </Button>
-            </Col>
-          </Form.Group>
-        </Form>
+        <Button
+          className='action-button purple'
+          onClick={() => {
+            history.push(addUrl);
+          }}>
+          {addLabel}
+        </Button>
       </div>
-      <Table className='admin-table' striped>
+      <Table striped>
         <thead>
           {columns.map((column) => (
             <th>{column.name}</th>

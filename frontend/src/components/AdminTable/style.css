@@ -1,0 +1,29 @@
+.admin-table {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: left;
+}
+
+.top-buttons {
+  margin-bottom: 1rem;
+}
+
+.purple {
+  background-color: blueviolet;
+  border-color: blueviolet;
+}
+
+.purple:hover {
+  background-color: darkmagenta;
+}
+
+.action-button {
+  border: none;
+  background-color: transparent;
+}
+
+.action-buttons-column {
+  width: 7rem;
+}

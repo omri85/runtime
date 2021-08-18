@@ -5,7 +5,7 @@ export default function CareerPathStage() {
   const [name, setName] = useState("SWE Level 1");
   return (
     <div>
-      <div className='h3'>{name}</div>
+      <div className='h3'>Career Stage: {name}</div>
       <Criteria name='Impact' />
     </div>
   );

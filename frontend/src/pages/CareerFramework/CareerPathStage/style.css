@@ -1,5 +1,15 @@
+.criteria {
+  width: 60%;
+  border: solid 2px gray;
+  padding: 2rem;
+}
+
+.objectives {
+  margin: 1rem;
+}
+
 .objective {
-  width: 50%;
+  margin-left: 2rem;
 }
 
 .objective p {

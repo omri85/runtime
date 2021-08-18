@@ -1,3 +1,4 @@
+import "./style.css";
 import Objective from "./Objective";
 
 type Props = {
@@ -6,10 +7,10 @@ type Props = {
 
 export default function Criteria(props: Props) {
   return (
-    <div>
-      <div className='h5'>{props.name}</div>
-      <div>
-        <div className='h6'>Objectives</div>
+    <div className='criteria'>
+      <div className='h4'>Criteria: {props.name}</div>
+      <div className='objectives'>
+        <div className='h5'>Objectives</div>
         <Objective
           name='Delivery'
           description='I deliver some of my team’s goals on time and with a high standard of quality'
