@@ -14,6 +14,7 @@ export default function CareerFramework() {
       <Route path='/frameworks/new' component={ChooseSource} />
       <Route path='/frameworks/:id' component={CareerFrameworkView} />
       <Route path='/frameworks' component={CareerFrameworksView} />
+      <Route path='/' component={CareerFrameworksView} />
     </Switch>
   );
 }
