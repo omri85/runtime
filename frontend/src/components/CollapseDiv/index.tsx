@@ -7,6 +7,7 @@ interface Props {
   children: any;
   title: string;
   open?: boolean;
+  className?: string;
 }
 
 export default function CollapseDiv(props: Props) {

@@ -1,17 +1,15 @@
-import React from "react";
+import React, { Children } from "react";
 import CollapseDiv from "../../../../components/CollapseDiv";
-import CareerPathCard from "./CareerPathCard";
 
-export default function CareerPathSection() {
+type Props = {
+  children: any;
+  title: string;
+};
+
+export default function CareerPathSection(props: Props) {
   return (
-    <CollapseDiv title='Software Engineer'>
-      <React.Fragment>
-        <CareerPathCard title='Level 1' />
-        <CareerPathCard title='Level 2' />
-        <CareerPathCard title='Level 3' />
-        <CareerPathCard title='Level 4' />
-        <CareerPathCard title='Level 5' />
-      </React.Fragment>
+    <CollapseDiv title={props.title}>
+      <React.Fragment>{props.children}</React.Fragment>
     </CollapseDiv>
   );
 }
