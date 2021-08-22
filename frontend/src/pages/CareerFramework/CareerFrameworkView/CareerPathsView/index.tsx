@@ -1,9 +1,13 @@
+import { Button } from "react-bootstrap";
 import CareerPathSection from "./CareerPathSection";
 
 export default function CareerPathsView() {
   return (
-    <div>
-      <div className='heading5'>Career Paths</div>
+    <div className='admin-view'>
+      <div className='admin-header'>
+        <div className='heading5'>Career Paths</div>
+        {/* <Button>Add a Career Path</Button> */}
+      </div>
       <br />
       <CareerPathSection title='Software Engineer'>
         <div className='career-path-level-title'>

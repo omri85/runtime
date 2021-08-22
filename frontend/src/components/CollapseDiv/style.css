@@ -1,9 +1,9 @@
 .collapse-div {
   border: solid 1px;
   border-color: lightgray;
+  border-radius: 20px;
   padding: 1rem;
   width: 70%;
-  margin-left: 2rem;
 }
 
 .collapse-div .title {

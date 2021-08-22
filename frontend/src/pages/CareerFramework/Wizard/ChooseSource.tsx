@@ -4,12 +4,13 @@ import { Button, Card, Col, Row } from "react-bootstrap";
 import { Link, useHistory } from "react-router-dom";
 import Gallery from "../../../components/Gallery";
 import GalleryCard from "../../../components/GalleryCard";
+import { CareerFrameworkWizardType } from "./CareerFrameworkWizardType";
 
-export default function ChooseSource() {
+export default function ChooseSource(props: CareerFrameworkWizardType) {
   const history = useHistory();
   return (
     <div>
-      <div className='heading3'>Create Career Framework</div>
+      <div className='heading4'>Create Career Framework</div>
       <div className='gallery'>
         <Row xs={1} md={3} className='g-4'>
           <Col>
@@ -19,12 +20,7 @@ export default function ChooseSource() {
                 <Card.Text>
                   Create a new career framework from an empty template
                 </Card.Text>
-                <Button
-                  onClick={() => {
-                    history.push("/framework");
-                  }}>
-                  Start
-                </Button>
+                <Button onClick={() => props.nextStage()}>Start</Button>
               </Card.Body>
             </Card>
           </Col>
@@ -41,7 +37,7 @@ export default function ChooseSource() {
           </Col>
         </Row>
       </div>
-      <div className='heading4'>Use a template</div>
+      <div className='heading5'>Use a template</div>
       <div className='gallery'>
         <Row xs={1} md={3} className='g-4'>
           <Col>

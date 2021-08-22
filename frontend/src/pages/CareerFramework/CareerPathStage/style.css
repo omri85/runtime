@@ -1,7 +1,6 @@
 .criteria {
   width: 60%;
-  border: solid 2px gray;
-  padding: 2rem;
+  margin-top: 1rem;
 }
 
 .objectives {
@@ -9,14 +8,18 @@
 }
 
 .objective {
-  margin-left: 2rem;
-}
-
-.objective p {
   text-align: left;
 }
 
 .deliverable {
   margin-left: 2rem;
   margin-bottom: 2px;
+}
+
+.admin-header {
+  display: flex;
+}
+
+.admin-header button {
+  align-self: flex-start;
 }

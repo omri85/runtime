@@ -11,7 +11,7 @@ type Props = {
 export default function Objective(props: Props) {
   return (
     <Card className='objective'>
-      <Card.Header>{props.name}</Card.Header>
+      <Card.Header>Objective: {props.name}</Card.Header>
       <Card.Body>
         <Card.Text>{props.description}</Card.Text>
         <div>
