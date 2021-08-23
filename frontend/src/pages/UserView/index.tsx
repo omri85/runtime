@@ -24,6 +24,20 @@ export default function UserView() {
         description='One of your team members raised a question in the team slack. See if you can help them'
         buttonLabel='To the channel'
       />
+      <br />
+      <div className='heading6'>Criteria: Mentorship</div>
+      <RecommendationCard
+        title='New Opening in your team'
+        subtitle='Mentorship for SWE Level 3'
+        description='A new opening for an engineer in your team was opened. See if you can give a hand in the interviewing process.'
+        buttonLabel='To Greenhouse'
+      />
+      <RecommendationCard
+        title='Provide feedback on a team member'
+        subtitle='Mentorship for SWE Level 3'
+        description='One of your team members is about to have their probation period review. Your feedback can very helpful.'
+        buttonLabel='To feedback form'
+      />
     </div>
   );
 }
