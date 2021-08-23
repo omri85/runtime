@@ -7,7 +7,7 @@ export default function CareerFrameworks() {
   ];
 
   return (
-    <div>
+    <div className='admin-view'>
       <div className='heading3'>Career Frameworks</div>
       <AdminTable
         data={data}

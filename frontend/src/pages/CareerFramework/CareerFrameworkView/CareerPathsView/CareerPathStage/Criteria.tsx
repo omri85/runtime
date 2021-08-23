@@ -11,8 +11,6 @@ export default function Criteria(props: Props) {
     <div className='criteria'>
       <div className='heading4'>Criteria: {props.name}</div>
       <div className='objectives'>
-        <div className='heading5'>Objectives</div>
-        <br />
         {Array.isArray(props.children)
           ? props.children.map((i) => i)
           : props.children}

@@ -11,13 +11,6 @@ export default function CareerPathsView() {
   const history = useHistory();
   const { id } = useParams<ParamsTypes>();
 
-  // const data = [
-  //   { name: "SWE Level 1" },
-  //   { name: "SWE Level 2" },
-  //   { name: "SWE Level 3" },
-  //   { name: "SWE Level 4" },
-  //   { name: "SWE Level 5" },
-  // ];
   const data = [
     { name: "Software Engineer", editUrl: `${id}/stages/1` },
     { name: "QA Engineer" },
