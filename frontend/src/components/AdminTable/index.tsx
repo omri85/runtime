@@ -6,7 +6,7 @@ import "./style.css";
 type Props = {
   data: TableDataType[];
   columns: TableColumnType[];
-  addUrl: string;
+  addUrl?: string;
   addLabel: string;
 };
 
@@ -31,7 +31,7 @@ export default function AdminTable(props: Props) {
         <Button
           className='action-button purple'
           onClick={() => {
-            history.push(addUrl);
+            history.push(addUrl || "");
           }}>
           {addLabel}
         </Button>

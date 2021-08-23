@@ -11,6 +11,7 @@ export default function Criteria(props: Props) {
       <div className='heading4'>Criteria: {props.name}</div>
       <div className='objectives'>
         <div className='heading5'>Objectives</div>
+        <br />
         <Objective
           name='Delivery'
           description='I deliver some of my team’s goals on time and with a high standard of quality'

@@ -1,4 +1,4 @@
-import Tooltip from "../../../components/Tooltip";
+import Tooltip from "../../../../../components/Tooltip";
 import { RiArrowRightSFill } from "react-icons/ri";
 
 type Props = {

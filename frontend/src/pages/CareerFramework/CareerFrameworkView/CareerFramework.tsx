@@ -8,7 +8,6 @@ export default function CareerFramework() {
   return (
     <div>
       <div className='heading4'>{name}</div>
-
       <br />
       <CareerPathsView />
     </div>

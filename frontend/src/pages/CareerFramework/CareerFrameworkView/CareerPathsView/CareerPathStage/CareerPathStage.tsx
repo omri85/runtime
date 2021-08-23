@@ -1,5 +1,5 @@
 import { useState } from "react";
-import CriteriaModel from "../../../models/CriteriaModel";
+import CriteriaModel from "../../../../../models/CriteriaModel";
 import Criteria from "./Criteria";
 
 const data = [
