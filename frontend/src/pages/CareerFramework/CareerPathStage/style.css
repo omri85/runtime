@@ -15,11 +15,3 @@
   margin-left: 2rem;
   margin-bottom: 2px;
 }
-
-.admin-header {
-  display: flex;
-}
-
-.admin-header button {
-  align-self: flex-start;
-}

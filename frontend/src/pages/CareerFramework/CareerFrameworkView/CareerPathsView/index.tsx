@@ -1,12 +1,22 @@
 import { Button } from "react-bootstrap";
+import { useHistory, useParams } from "react-router-dom";
 import CareerPathSection from "./CareerPathSection";
 
+interface ParamsTypes {
+  id: string;
+}
+
 export default function CareerPathsView() {
+  const history = useHistory();
+  const { id } = useParams<ParamsTypes>();
+
   return (
     <div className='admin-view'>
       <div className='admin-header'>
         <div className='heading5'>Career Paths</div>
-        {/* <Button>Add a Career Path</Button> */}
+        <Button onClick={() => history.push(`${id}/paths/new`)}>
+          Add a Career Path
+        </Button>
       </div>
       <br />
       <CareerPathSection title='Software Engineer'>

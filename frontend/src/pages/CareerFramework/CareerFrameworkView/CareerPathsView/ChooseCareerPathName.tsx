@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import { Button, Col, Form } from "react-bootstrap";
-import { useHistory } from "react-router-dom";
-import { post } from "../../../api";
-import { CareerFrameworkWizardType } from "./CareerFrameworkWizardType";
+import { useHistory, useParams } from "react-router-dom";
+import { post } from "../../../../api";
 
-export default function ChooseFrameworkName(props: CareerFrameworkWizardType) {
+type ParamsType = {
+  fid: string;
+};
+
+export default function ChooseCareerPathName() {
   const [name, setName] = useState("");
+  const { fid } = useParams<ParamsType>();
   const history = useHistory();
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
@@ -14,14 +18,14 @@ export default function ChooseFrameworkName(props: CareerFrameworkWizardType) {
     if (form.checkValidity() === false) {
       event.stopPropagation();
     }
-    post("careerFramework", { name }).then((res) => {
+    post(`careerFramework/${fid}/paths`, { name }).then((res) => {
       const { id } = res;
-      history.push(`/frameworks/${id}`);
+      history.push(`${id}/stages`);
     });
   };
   return (
     <div>
-      <div className='heading5'>Give the framework a name</div>
+      <div className='heading5'>Give the Career Path a name</div>
       <br />
       <Form className='admin-form' onSubmit={handleSubmit}>
         <Col sm={4}>
@@ -35,7 +39,7 @@ export default function ChooseFrameworkName(props: CareerFrameworkWizardType) {
           />
         </Col>
         <br />
-        <Button type='submit'>Next stage</Button>
+        <Button type='submit'>Create Path</Button>
       </Form>
     </div>
   );
