@@ -12,6 +12,16 @@
   margin-bottom: 1rem;
 }
 
+.objective svg {
+  margin-left: 2px;
+  cursor: pointer;
+}
+
+.objective-header {
+  display: flex;
+  justify-content: space-between;
+}
+
 .deliverable {
   margin-left: 2rem;
   margin-bottom: 2px;

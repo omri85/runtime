@@ -9,7 +9,7 @@ type Props = {
 export default function Criteria(props: Props) {
   return (
     <div className='criteria'>
-      <div className='heading4'>Criteria: {props.name}</div>
+      <div className='heading5'>Criteria: {props.name}</div>
       <div className='objectives'>
         {Array.isArray(props.children)
           ? props.children.map((i) => i)
