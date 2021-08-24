@@ -18,11 +18,11 @@ export default function CareerPathsStages() {
 
   return (
     <div className='admin-view'>
-      <div className='heading5'>Career Paths</div>
+      <div className='heading5'>Career Stages</div>
       <AdminTable
         data={data}
         columns={[{ name: "Name", id: "name" }]}
-        addLabel='Add Path'
+        addLabel='Add Stage'
         addUrl={`${id}/stages/new`}
       />
     </div>

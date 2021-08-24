@@ -12,7 +12,7 @@ export default function CareerPathsView() {
   const { id } = useParams<ParamsTypes>();
 
   const data = [
-    { name: "Software Engineer", editUrl: `${id}/stages/1` },
+    { name: "Software Engineer", editUrl: `${id}/paths/1` },
     { name: "QA Engineer" },
   ];
   return (

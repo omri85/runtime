@@ -2,7 +2,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { get } from "../../../../api";
-import AdminTable from "../../../../components/AdminTable";
+import CareerPathsStages from "./CareerPathStage";
 
 type ParamsType = {
   id: string;
@@ -24,13 +24,8 @@ export default function CareerPath() {
   return (
     <div className='admin-view'>
       <div className='heading4'>{name}</div>
-      <div className='heading5'>Stages</div>
-      <AdminTable
-        data={stages}
-        columns={[{ name: "Name", id: "name" }]}
-        addLabel='Add a stage'
-        addUrl='paths/'
-      />
+      <br />
+      <CareerPathsStages />
     </div>
   );
 }
