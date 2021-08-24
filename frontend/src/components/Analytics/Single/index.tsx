@@ -9,7 +9,7 @@ type Props = {
 export default function Single(props: Props) {
   const { title, value } = props;
   return (
-    <div className='single'>
+    <div className='single widget'>
       <div className='heading5'>
         <strong>{title}</strong>
       </div>
