@@ -12,12 +12,28 @@ export default function UserView() {
       <div className='heading6'>Criteria: Impact</div>
       <RecommendationCard
         title='Prefer higher priority tickets'
-        subtitle='Impact - Understand the business: deliver high value features first'
+        subtitle='Understand the business: deliver high value features first'
         description='Tickets with higher priority are still pending. Consider starting with
           them first.'
         buttonLabel='To the Jira board'
+        explanation='In previous sprint, tickets with lower priority were completed while more important ones were not'
+      />
+      <RecommendationCard
+        title='Finish the sprint with a higher completion rate'
+        subtitle='I deliver what I committed to'
+        description='Ask for guidance on task estimations'
+        buttonLabel='To the Jira board'
+        explanation='In past few sprints your delivery was significantly different than the commitment'
+      />
+      <RecommendationCard
+        title='Estimating more accurately'
+        subtitle='I deliver what I committed to'
+        description='Ask for guidance on task estimations'
+        buttonLabel='To the Jira board'
+        explanation='In past few sprints your the actual work time on the tickets was  significantly different than original estimation'
       />
       <br />
+      <div className='heading6'>Criteria: Engagement</div>
       <RecommendationCard
         title='Team member needs assistance'
         subtitle='Team work: Help team members'

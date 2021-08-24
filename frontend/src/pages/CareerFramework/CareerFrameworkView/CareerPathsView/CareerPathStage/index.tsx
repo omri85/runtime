@@ -17,7 +17,7 @@ export default function CareerPathsStages() {
   ];
 
   return (
-    <div className='admin-view'>
+    <div>
       <div className='heading5'>Career Stages</div>
       <AdminTable
         data={data}
